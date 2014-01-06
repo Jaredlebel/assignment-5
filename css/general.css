@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-wdith; scale: 1;}
+@-ms-viewport { width: device-wdith; scale: 1;}
+@-webkit-viewport { width: device-wdith; scale: 1;}
+@-o-viewport { width: device-wdith; scale: 1;}
+@viewport { width: device-wdith; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+@media only screen and (min-width: 100em) {
+	html {
+		font-size: 1.5rem;	
+	}
+	
+}
+
+html, body {
+	font-family: sans-serif;
+	line-height: 1.3rem;
+}
+
+main {
+	width: 90%;
+	margin: 5rem auto 1rem;
+	height: auto;
+	overflow: auto;
+}
+
+.logo {
+	background-image: url(../images/logo.svg);
+	height: 3rem;
+	margin: .25rem auto .25rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	color: #333;
+	line-height: 2.5rem;
+	font-size: 2.45rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+header {
+	background-image: url(../images/splashphoto.jpg);
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	box-shadow: #666 2px 2px 2px;
+	overflow:auto;
+}
+
+nav {
+	background-color: rgba(0,255,255,.8);
+	text-align: center;
+	margin-top: .5rem;
+}
+
+nav a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: .75rem;
+}
+
+nav a:hover {
+	color: #999;
+	font-style: italic;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: .5rem .75rem .5rem;
+	font-size: 12px;
+}
+
+img {
+	width: 100%;
+	margin-top: 3.5rem;
+}
+
+p {
+	position: relative;
+	line-height: 1.5rem;
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+p a {
+	color: #999;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.schedule a {
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+
+.schedule ul li {
+	padding: .5rem;
+}
+
+.btn {
+	font-size: 1.3rem;
+	display: block;
+	background-color: #999;
+	padding: .5rem;
+	text-align: center;
+	border-bottom: #ccc dotted 1px;
+}
+
+.button-content ul li {
+	background-color: #CCC;
+	border-bottom: #999 dotted 1px;
+	margin: 0 5%;
+	text-align: center;
+}
+
+.button-content {
+	display: none;	
+}
+
+.button-content[data-state="expanded"] {
+	display: block;
+}
+
+.contact li {
+	font-size: .75rem;
+	text-align: center;
+}
+
+.contact a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:bolder;	
+	color: #999;
+}
+
+.box{
+	text-align: center;
+}
+
+.box li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	background-color: #333;
+	padding: .5rem;
+	margin: 2rem auto 0;
+	width: 14.5rem;
+	border-radius: 4px;
+}
+
+.box-wide {
+	display: none;
+}
+
+.social {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social li {
+	text-align: center;
+	display: inline-block;
+	width: 10%;
+}
+
+.social-wide {
+	display: none;
+}
+
+@media only screen and (min-width: 25em) {
+	
+	.logo {
+		background-position: left;
+		float: left;
+		width: 10rem;
+		margin-left: 5%;
+	}
+
+	.nav {
+		overflow: auto;
+		float: right;
+		width: 20rem;
+		right: 0;
+	}
+	
+	.nav ul {
+		float: right;
+	}
+
+	.nav ul li {
+		display: inline-block;
+		float: right;
+	}
+	
+	p {
+		text-align: left;
+	}
+	
+	.btn {
+		margin: 0 20%;
+	}
+	
+	.button-content ul li {
+		margin: 0 20%;
+	}
+	
+}
+
+@media only screen and (min-width: 40em) {
+	
+	main {
+		width: 90%;
+		overflow:auto;
+	}
+	
+	.logo {
+		margin-left: 15%;
+	}
+	
+	h1 {
+		text-align: left;
+		width: 90%;
+		margin: 0 11%;
+	}
+	
+	.left {
+		margin-left: 11%;
+		float: left;
+		width: 47%;
+		overflow: auto;
+	}
+	
+	.right {
+		float: right;
+		width: 40%;
+		overflow: auto;
+	}
+	
+	.wrap {
+		overflow:auto;
+	}
+	
+	.contact li{
+		text-align: left;
+	}
+	
+	.social {
+		width: 80%;
+	}
+	
+}
+
+@media only screen and (min-width: 65em) {
+	.social {
+		display: none;
+	}
+
+	.box {
+		display: none;
+	}
+	
+	.box-wide {
+		display: block;
+	}
+	
+	.box-wide li {
+		display: block;
+		text-transform: uppercase;
+		text-align: center;
+		color: #FFF;
+		background-color: #333;
+		padding: .5rem;
+		margin: 2rem auto 0;
+		width: 11rem;
+		border-radius: 4px;
+	}
+	
+	.social-wide {
+		display: block;
+	}
+
+	.social-wide li {
+		text-align: center;
+		display: inline-block;
+		width: 10%;
+	}
+}
+
+footer {
+	height: 20rem;
+	background-color: #ccc;
+	width: 100%;
+	padding: 2rem;
+	overflow:auto;
+	position:relative;
+	bottom:0;
+}
+
+footer li {
+	line-height: 1.5rem;
+	color: #FFF;
+	text-align: center;
+}
+
+.logo-footer {
+	background-image: url(../images/logo.svg);
+	height: 1.5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}

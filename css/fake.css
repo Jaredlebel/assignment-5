@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+img {
+	position:;relative;
+	background-position: center;
+}
+
+.img2 {
+	background-image: url(../images/fake2.png);
+}
+
+.img3 {
+	background-position: center;
+	background-size: contain;	
+}
